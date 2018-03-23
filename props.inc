@@ -200,3 +200,22 @@ union {
 	rotate <0,0,180>
 }
 #end
+
+#macro create_tree()
+#declare HEIGHT = lombardy_poplar_13_height * 1;
+#declare WIDTH = HEIGHT*200/300;
+union { 
+
+         object { lombardy_poplar_13_stems
+                pigment{color MediumWood} }
+
+         object { lombardy_poplar_13_leaves
+                texture { pigment {color MediumForestGreen} 
+                          finish { ambient 0.15 diffuse 0.8 }}}
+         rotate 90*y 
+         scale .3
+         translate <15, 7.5, 16>
+	}
+  
+
+#end

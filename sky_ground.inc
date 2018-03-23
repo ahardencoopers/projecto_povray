@@ -6,7 +6,6 @@ plane{
 		#else                 finish { ambient 1 diffuse 0}
 		#end 
 	}
-
 	texture{
 		pigment{
 			bozo turbulence 0.75
@@ -27,6 +26,7 @@ plane{
 	} // end texture 2
 	scale 10000
 }
+
 #end
 
 #macro create_fog()

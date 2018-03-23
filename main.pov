@@ -7,6 +7,7 @@
 //Includes creados para el proyecto
 #include "sky_ground.inc"
 #include "mountain.inc"
+#include "lombardy_poplar.inc"
 #include "props.inc"
 
 global_settings{ assumed_gamma 1.0 }
@@ -45,3 +46,13 @@ create_mountain1(0,-6,0)
 create_mountain1(-5,-9,-8)
 create_mountain1(-15,-7,8)
 create_boat(-9,1.4,14,0.60,58)
+create_tree()
+sphere{
+	<180,2,-180>, 10
+	texture{pigment {image_map{
+		png "texture1.png"
+		map_type 1
+	}}}    
+	//rotate <0, 0, 5>
+	scale 1
+}
